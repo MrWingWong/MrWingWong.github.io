@@ -1,0 +1,125 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+body h1 {
+	text-align: center;
+}
+
+header {
+	background-color: rgb(79, 24, 82);
+	flex: none;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+}
+
+nav ul li h1 {
+	color: white;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	line-height: 1;
+}
+
+nav div:first-child h1{
+	background: rgb(79, 24, 82);
+	line-height: 0;
+	text-align: center;
+}
+
+nav div:first-child h1, nav ul{
+	margin: 0;
+}
+
+main {
+	flex: auto;
+	overflow-y: scroll;	
+}
+
+.image-gallery {
+	display: block;
+}
+
+.image-gallery img {
+	display: block;
+	float: left;
+}
+
+.clear {
+	clear: both;
+	height: 0;
+	width: 0;
+	font-size: 1px;
+	line-height: 0;
+}
+
+.videos h2{
+	text-align: center;
+}
+
+.videos iframe {
+	display: flex;
+	float: left;
+	margin: 1px;
+	justify-content: center;
+}
+
+footer {
+	display: flex;
+	background-color: #753B76;
+	height: 50px;
+	font-size: 20px;
+	align-items: center;
+}
+
+.footertitle {
+	font-size: 20px;
+	padding-left: 15px;
+	font-weight: bold;
+	color: white;
+}
+
+.details ul li{
+	display: inline-block;
+	padding: 1.2rem;
+	font-size: 15px;
+	color: white;
+}
+
+@media only screen and (min-width: 600px){
+	nav{
+		display: flex;
+		justify-content: space-between;
+		background: rgb(79, 24, 82);
+		align-items: center;
+	}
+	
+	nav ul{
+		display: flex;
+		align-items: center;
+	}
+	
+	nav div:first-child h1{
+		padding: 0;
+		margin-left: 1rem;
+		background: rgb(79, 24, 82);
+	}
+	
+	nav ul li a{
+		padding: 1.2rem;
+		background: rgb(79, 24, 82);
+	}
+}
